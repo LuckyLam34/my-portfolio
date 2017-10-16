@@ -1,9 +1,11 @@
 @import '../../styles/_variables';
+@import '../../styles/_mixins';
+@import '../../styles/_responsive';
 .welcome {
   header {
-    color: #fff;
+    color: $text-white;
     &>h1 {
-      font-size: 5rem;
+      font-size: $h1-header;
       font-weight: bold;
       text-transform: uppercase;
       white-space: nowrap;
@@ -11,15 +13,16 @@
     &>p {
       font-size: 2em;
     }
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @include center-image;
     text-align: center;
     .content {
-      font-size: 45px; // line-height: 40px;
-      color: #ecf0f1;
+      margin-bottom: $margin-space;
+      h1 {
+        font-size: $h1-header;
+      }
+      color: $text-white;
       &>.text-container {
+        margin: 0 20px;
         &:before {
           content: '[';
           left: 0;
@@ -35,7 +38,7 @@
           top: 0;
           color: $rain;
           font-size: 62px;
-          line-height: 50px;
+          line-height: 102px;
           -webkit-animation-name: opacity;
           -webkit-animation-duration: 2s;
           -webkit-animation-iteration-count: infinite;
