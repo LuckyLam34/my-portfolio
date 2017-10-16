@@ -1,3 +1,4 @@
+@import '../../styles/_variables';
 .welcome {
   header {
     color: #fff;
@@ -15,14 +16,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    .btn-whoiam {
-      background-color: transparent;
-      border: 1px solid #7C9C79;
-    }
     .content {
       font-size: 45px; // line-height: 40px;
       color: #ecf0f1;
-      &>.container {
+      &>.text-container {
         &:before {
           content: '[';
           left: 0;
@@ -36,7 +33,7 @@
         &:before {
           position: absolute;
           top: 0;
-          color: #16a085;
+          color: $rain;
           font-size: 62px;
           line-height: 50px;
           -webkit-animation-name: opacity;
