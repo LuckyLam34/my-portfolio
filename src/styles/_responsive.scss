@@ -1,1 +1,87 @@
+@media screen and (max-width: 953px) {
+  html {
+    font-size: 14px !important;
+  }
+}
 
+@media screen and (max-width: 895px) {
+  html {
+    font-size: 13px !important;
+  }
+}
+
+@media screen and (max-width: 836px) {
+  html {
+    font-size: 12px !important;
+    .welcome {
+      header {
+        .content {
+          &>.text-container {
+            &:before,
+            &:after {
+              line-height: 90px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 778px) {
+  html {
+    font-size: 11px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .welcome {
+    header {
+      .col-xs-12 {
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  html {
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (max-width: 663px) {
+  html {
+    font-size: 9px !important;
+  }
+}
+
+@media screen and (max-width: 604px) {
+  html {
+    font-size: 8px !important;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  html {
+    font-size: 7px !important;
+  }
+}
+
+@media screen and (max-width: 487px) {
+  html {
+    font-size: 6px !important;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  .welcome {
+    .content {
+      h1 {
+        line-height: 36px;
+      }
+    }
+  }
+}
