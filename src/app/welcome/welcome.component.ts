@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import { Router } from '@angular/router';
+// import * as $ from 'jquery';
 
 @Component({
   selector: 'trinhlam-portfolio-welcome',
@@ -8,10 +9,14 @@ import * as $ from 'jquery';
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
 
+  }
+
+  goAboutMe() {
+    this.router.navigate(['/about-me']);
   }
 
 }

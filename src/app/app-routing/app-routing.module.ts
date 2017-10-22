@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from "@angular/router";
 import { WelcomeComponent } from '../welcome/welcome.component';
+import { AboutMeComponent } from '../about-me/about-me.component';
 
 @NgModule({
   imports: [
@@ -10,6 +11,10 @@ import { WelcomeComponent } from '../welcome/welcome.component';
       {
         path: 'welcome',
         component: WelcomeComponent
+      },
+      {
+        path: 'about-me',
+        component: AboutMeComponent
       },
       {
         path: '',
