@@ -1,12 +1,12 @@
+body,
+html {
+  height: 100%;
+}
+
 html {
   font-size: 15px;
 }
 
 body {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/landing.jpg') no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  background-color: #464646;
   font-family: 'Source Sans Pro', sans-serif;
 }
