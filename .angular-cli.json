@@ -19,9 +19,12 @@
     "prefix": "trinhlam-portfolio",
     "styles": [
       "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+      "../node_modules/aos/dist/aos.css",
       "styles/styles.scss"
     ],
-    "scripts": [],
+    "scripts": [
+      "../node_modules/aos/dist/aos.js"
+    ],
     "environmentSource": "environments/environment.ts",
     "environments": {
       "dev": "environments/environment.ts",

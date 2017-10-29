@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from '../../../node_modules/aos/dist/aos';
 
 @Component({
   selector: 'trinhlam-portfolio-about-me',
@@ -10,6 +11,9 @@ export class AboutMeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    AOS.init({
+      duration: 1200
+    });
   }
 
 }

@@ -1,0 +1,60 @@
+@import '../../styles/_variables';
+@import '../../styles/_mixins';
+@import '../../styles/_responsive';
+.about-me {
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/wall-e-bubbles.jpg');
+  // background-repeat: no-repeat;
+  // background-color: #464646;
+  // background-position: center;
+  // background-size: cover;
+  // background-attachment: fixed;
+  // height: 100%;
+  &>h1 {
+    @include center;
+    color: $text-white
+  }
+  .item {
+    // width: 800px;
+    text-align: center;
+    height: fit-content;
+    margin: 0px auto;
+    margin-top: 50px;
+    margin-bottom: $margin-space;
+    padding: 50px;
+    background: rgba(247, 244, 244, 0.1);
+    text-align: center;
+    color: $text-white;
+    font-size: 2.5em;
+  }
+  [data-aos='anim3'] {
+    transform: rotate(360deg);
+    opacity: 0;
+    transition-property: transform, opacity;
+    &.aos-animate {
+      transform: rotate(0);
+      opacity: 1;
+    }
+  }
+  section.basic {
+    margin-top: 0;
+    .img-circle,
+    img {
+      margin: 0 auto;
+      margin-top: $margin-space;
+    }
+    .img-circle {
+      width: 310px;
+    }
+  }
+  section.career-objective {
+    img {
+      width: 80%;
+    }
+    .col-xs-12 {
+      img {
+        margin: 0 auto;
+        margin-bottom: $margin-space;
+      }
+    }
+  }
+}

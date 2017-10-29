@@ -13,7 +13,7 @@
   background-color: #464646;
   header {
     color: $text-white;
-    @include center-image;
+    @include center;
     text-align: center;
     .col-sm-6 {
       text-align: right;
