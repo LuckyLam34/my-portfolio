@@ -45,11 +45,15 @@
     .img-circle {
       width: 310px;
     }
+
+    &>p:first-child {
+      white-space: nowrap;
+    }
   }
   section.career-objective {
-    img {
-      width: 80%;
-    }
+    // img {
+    //   width: 80%;
+    // }
     .col-xs-12 {
       img {
         margin: 0 auto;
