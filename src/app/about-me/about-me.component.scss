@@ -45,7 +45,6 @@
     .img-circle {
       width: 310px;
     }
-
     &>p:first-child {
       white-space: nowrap;
     }
@@ -61,4 +60,11 @@
       }
     }
   }
+  section.education {
+    img {
+      margin: 0 auto;
+    }
+    text-align: center;
+  }
+  section.experiences {}
 }

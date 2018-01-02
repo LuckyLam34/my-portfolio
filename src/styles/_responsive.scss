@@ -4,6 +4,41 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  #no-tables table,
+  #no-tables thead,
+  #no-tables tbody,
+  #no-tables th,
+  #no-tables td,
+  #no-tables tr {
+    display: block;
+  }
+  #no-tables thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  #no-tables tr {
+    border: 1px solid #ccc;
+  }
+  #no-tables td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%; // white-space: nowrap;
+    text-align: left;
+  }
+  #no-tables td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px; // white-space: nowrap;
+    text-align: left;
+    content: attr(data-title);
+  }
+}
+
 @media screen and (max-width: 895px) {
   html {
     font-size: 13px !important;
