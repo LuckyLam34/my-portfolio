@@ -6,23 +6,23 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SharedModule } from './shared/shared.module';
-import { AboutMeComponent } from './about-me/about-me.component';
+
 import { AboutMeModule } from './about-me/about-me.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    WelcomeComponent,
-    AboutMeComponent
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     SharedModule,
     AboutMeModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

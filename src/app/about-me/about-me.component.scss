@@ -66,5 +66,11 @@
     }
     text-align: center;
   }
-  section.experiences {}
+  section.experiences {
+    & table thead,
+    tr,
+    td {
+      font-size: 0.8em;
+    }
+  }
 }
