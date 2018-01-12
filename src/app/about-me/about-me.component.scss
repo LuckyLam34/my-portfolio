@@ -15,14 +15,11 @@
   }
   .item {
     // width: 800px;
-    text-align: center;
     height: fit-content;
     margin: 0px auto;
     margin-top: 50px;
     margin-bottom: $margin-space;
-    padding: 50px;
-    background: rgba(247, 244, 244, 0.1);
-    text-align: center;
+    padding: 50px; // background: rgba(247, 244, 244, 0.1);
     color: $text-white;
     font-size: 2.5em;
   }
@@ -35,6 +32,7 @@
       opacity: 1;
     }
   }
+  section#wherefrom {}
   section.basic {
     margin-top: 0;
     .img-circle,
@@ -48,29 +46,92 @@
     &>p:first-child {
       white-space: nowrap;
     }
+    &>.col-md-6 {
+      padding-top: 44px;
+    }
   }
   section.career-objective {
-    // img {
-    //   width: 80%;
-    // }
-    .col-xs-12 {
-      img {
-        margin: 0 auto;
-        margin-bottom: $margin-space;
-      }
+    p {
+      font-size: 0.8em;
+    }
+    img {
+      max-height: 200px;
+      max-width: 200px;
+      margin: 0 auto;
+      margin-bottom: $margin-space;
     }
   }
   section.education {
     img {
       margin: 0 auto;
     }
-    text-align: center;
+    p {
+      text-align: center;
+    }
   }
   section.experiences {
     & table thead,
     tr,
     td {
       font-size: 0.8em;
+    }
+  }
+  /*
+  Scroll down
+  */
+  #section07 a {
+    padding-top: 80px;
+  }
+  #section07 a span {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb07 2s infinite;
+    animation: sdb07 2s infinite;
+    opacity: 0;
+    box-sizing: border-box;
+  }
+  #section07 a span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+  #section07 a span:nth-of-type(2) {
+    bottom: 36px;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+  }
+  #section07 a span:nth-of-type(3) {
+    bottom: 52px;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+  }
+  @-webkit-keyframes sdb07 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb07 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
 }

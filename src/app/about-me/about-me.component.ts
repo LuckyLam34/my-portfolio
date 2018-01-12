@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as AOS from '../../../node_modules/aos/dist/aos';
 import { AboutMeService } from '../services/about-me.service';
 import * as _ from 'lodash';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'trinhlam-portfolio-about-me',
@@ -18,13 +19,21 @@ export class AboutMeComponent implements OnInit {
       duration: 1200
     });
 
+    $(document).ready(() => console.log($));
+
+    setInterval(() => {
+      AOS.init({
+        duration: 1200
+      });
+    }, 1000);
+
     this.aboutMeService.getExperiences()
       .subscribe(data => {
         for (let key in data) {
           this.experiences.push(data[key]);
         }
       },
-      error => console.error('Shit happened!'));
+      error => console.error('Error!!!'));
   }
 
 }
