@@ -19,13 +19,11 @@ export class AboutMeComponent implements OnInit {
       duration: 1200
     });
 
-    $(document).ready(() => console.log($));
-
     setInterval(() => {
       AOS.init({
         duration: 1200
       });
-    }, 1000);
+    }, 2000);
 
     this.aboutMeService.getExperiences()
       .subscribe(data => {
@@ -36,4 +34,11 @@ export class AboutMeComponent implements OnInit {
       error => console.error('Error!!!'));
   }
 
+  goNext() {
+    $(document).ready(() => {
+      $('html, body').animate({
+        scrollTop: $('#career').offset().top
+      }, 1000);
+    });
+  }
 }

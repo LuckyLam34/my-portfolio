@@ -1,23 +1,21 @@
 <div class="about-me">
 
   <div class="container">
-    <div class="row">
-      <section class="row item basic" data-aos="fade-up">
-        <div class="col-md-3">
-          <img class="img-circle img-responsive" src="../../assets/trinhlam.png" alt="Trinh Lam pic">
-        </div>
-        <div class="col-md-6">
+    <section class="row item basic" data-aos="fade-up">
+      <div class="col-md-3">
+        <img class="img-circle img-responsive" src="../../assets/trinhlam.png" alt="Trinh Lam pic">
+      </div>
+      <div data-aos="zoom-in-up" class="col-md-6">
 
-          <p>Hi! I'm Wall-e</p>
-          <p>Nah, just kidding! My name is
-            <b>Trinh</b>.</p>
+        <p>Hi! I'm Wall-e</p>
+        <p>Nah, just kidding! My name is
+          <b>Trinh</b></p>
 
-          <p>I'm a
-            <b>front-end developer</b>
-          </p>
-        </div>
-      </section>
-    </div>
+        <p>I'm a
+          <b>front-end developer</b>
+        </p>
+      </div>
+    </section>
 
     <section id="wherefrom" class="row item">
       <div class="col-md-5 col-md-offset-2 col-sm-12 text-center">
@@ -29,94 +27,65 @@
         </section>
       </div>
     </section>
-    <div class="row">
-      <section class="item career-objective">
-        <div class="row">
-          <div class="col-md-4 col-sm-4" data-aos="fade-down">
-            <img src="../../assets/goal.png" class="img-responsive">
-          </div>
-          <div class="col-md-8 col-sm-8 text-right" data-aos="fade-up">
-            <p>With almost two years of experience working as a Front-end developer I have good knowledge of JavaScript language
-              and hands-on experience with AngularJS. As well as being a good researcher, a person who is open to challenges
-              and having a can-do attitude I think that nothing is impossible. </p>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="row">
-      <section class="item education" data-aos="fade-right">
-        <div class="row">
 
-          <div data-aos="flip-up" class="col-md-12">
-            <img src="../../assets/education-icon.png" class="img-responsive">
-          </div>
-          <div data-aos="fade-up-right">
-            <p>Bachelor of Science (B.S.), Information Technology</p>
-            <p>Saigon University</p>
-            <p>2016</p>
-          </div>
+    <section class="item career-objective" id="career">
+      <div class="row">
+        <div class="col-md-4 col-sm-4" data-aos="fade-down">
+          <img src="../../assets/goal.png" class="img-responsive">
         </div>
-      </section>
-    </div>
-
-    <!-- <div class="col-md-12">
-        <section class="item" data-aos="anim3">3</section>
-      </div> -->
-
-    <!-- <div class="col-md-12">
-        <section class="item" data-aos="fade-left">4</section>
-      </div> -->
-    <div class="row">
-      <section class="item experiences" data-aos="zoom-in">
-        <div class="row">
-          <div id="no-tables">
-            <table class="col-md-12 table-bordered table-condensed cf">
-              <thead class="cf">
-                <tr>
-                  <th>Project Name</th>
-                  <th>Project Description</th>
-                  <th>Team Size</th>
-                  <th>Responsibilities</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr *ngFor="let project of experiences">
-                  <td data-title="Project">{{project.projectName}}</td>
-                  <td data-title="Description">{{project.projectDescription}}</td>
-                  <td data-title="Size" class="numeric">{{project.teamsize}}</td>
-                  <td data-title="Role" class="numeric">{{project.responsibilities}}</td>
-                </tr>
-                <!-- <tr>
-                      <td data-title="Code">ADU</td>
-                      <td data-title="Company">ADAMUS RESOURCES LIMITED</td>
-                      <td data-title="Price" class="numeric">$0.72</td>
-                      <td data-title="Change" class="numeric">0.00</td>
-                    </tr>
-                    <tr>
-                      <td data-title="Code">AGG</td>
-                      <td data-title="Company">ANGLOGOLD ASHANTI LIMITED</td>
-                      <td data-title="Price" class="numeric">$7.81</td>
-                      <td data-title="Change" class="numeric">-0.22</td>
-                    </tr> -->
-              </tbody>
-            </table>
-          </div>
+        <div class="col-md-8 col-sm-8 text-right" data-aos="fade-up">
+          <p>With almost two years of experience working as a Front-end developer I have good knowledge of JavaScript language
+            and hands-on experience with AngularJS. As well as being a good researcher, a person who is open to challenges
+            and having a can-do attitude I think that nothing is impossible. </p>
         </div>
-      </section>
-    </div>
-    <!-- <div class="col-md-12">
-        <section class="item" data-aos="zoom-out">6</section>
-      </div> -->
-    <!-- <div class="col-md-12">
-        <section class="item" data-aos="slide-up">7</section>
       </div>
-      <div class="col-md-12">
-        <section class="item" data-aos="flip-up">8</section>
-      </div> -->
+    </section>
+    <section class="item education" data-aos="fade-right">
+      <div class="row">
 
-    <section id="section07" class="demo">
+        <div data-aos="flip-up" class="col-md-12">
+          <img src="../../assets/education-icon.png" class="img-responsive">
+        </div>
+        <div data-aos="fade-up-right">
+          <p>Bachelor of Science (B.S.), Information Technology</p>
+          <p>Saigon University</p>
+          <p>2016</p>
+        </div>
+      </div>
+    </section>
 
-      <a href="#section08">
+    <section class="item experiences">
+      <div class="row">
+        <div data-aos="flip-up" class="col-md-12">
+          <img src="../../assets/working.png" alt="" class="img-responsive">
+        </div>
+        <div class="clearfix"></div>
+        <div data-aos="zoom-in" id="no-tables">
+          <table class="col-md-12 table-bordered table-condensed cf">
+            <thead class="cf">
+              <tr>
+                <th>Project Name</th>
+                <th>Project Description</th>
+                <th>Team Size</th>
+                <th>Responsibilities</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let project of experiences">
+                <td data-title="Project">{{project.projectName}}</td>
+                <td data-title="Description">{{project.projectDescription}}</td>
+                <td data-title="Size" class="numeric">{{project.teamsize}}</td>
+                <td data-title="Role" class="numeric">{{project.responsibilities}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section (click)="goNext()" id="scrollNext">
+
+      <a>
         <span></span>
         <span></span>
         <span></span>
