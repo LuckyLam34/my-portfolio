@@ -23,7 +23,8 @@
       "styles/styles.scss"
     ],
     "scripts": [
-      "../node_modules/aos/dist/aos.js"
+      "../node_modules/aos/dist/aos.js",
+      "../node_modules/velocity-animate/velocity.js"
     ],
     "environmentSource": "environments/environment.ts",
     "environments": {
