@@ -95,6 +95,19 @@
     & tbody>tr>td:nth-child(3) {
       text-align: center;
     }
+    tr>th:nth-child(2) {
+      width: 300px;
+    }
+    ul {
+      padding: 0;
+    }
+    ul>li:first-child {
+      padding-left: 0px;
+    }
+    ul>li {
+      list-style-type: none;
+      padding-left: 15px;
+    }
   }
   /*
   Scroll down

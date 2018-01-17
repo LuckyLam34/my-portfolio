@@ -12,6 +12,7 @@ import * as $ from 'jquery';
 export class AboutMeComponent implements OnInit {
   experiences: any = [];
 
+
   constructor(private aboutMeService: AboutMeService) { }
 
   ngOnInit() {
@@ -29,6 +30,7 @@ export class AboutMeComponent implements OnInit {
       .subscribe(data => {
         for (let key in data) {
           this.experiences.push(data[key]);
+          data[key]['responsibilities'] = this.convertStringToArray(data[key]['responsibilities']);
         }
       },
       error => console.error('Error!!!'));
@@ -40,5 +42,11 @@ export class AboutMeComponent implements OnInit {
         scrollTop: $('#career').offset().top
       }, 1000);
     });
+  }
+
+  private convertStringToArray(fromString: string): string[] {
+    let toArray: string[] = [];
+
+    return _.split(fromString, ';');
   }
 }

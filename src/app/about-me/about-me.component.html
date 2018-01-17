@@ -75,7 +75,11 @@
                 <td data-title="Project">{{project.projectName}}</td>
                 <td data-title="Description">{{project.projectDescription}}</td>
                 <td data-title="Size" class="numeric">{{project.teamsize}}</td>
-                <td data-title="Role" class="numeric">{{project.responsibilities}}</td>
+                <td data-title="Role">
+                  <ul>
+                    <li *ngFor="let r of project.responsibilities">{{r}}</li>
+                  </ul>
+                </td>
               </tr>
             </tbody>
           </table>
