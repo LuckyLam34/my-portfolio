@@ -1,6 +1,5 @@
-@import '../../styles/_variables';
-@import '../../styles/_mixins';
-@import '../../styles/_responsive';
+@import '~styles/variables';
+@import '~styles/mixins';
 .welcome {
   /* The image used */
   background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../assets/landing-walle.jpg');

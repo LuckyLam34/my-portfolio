@@ -1,6 +1,5 @@
-@import '../../styles/_variables';
-@import '../../styles/_mixins';
-@import '../../styles/_responsive';
+@import '~styles/variables';
+@import '~styles/mixins';
 .about-me {
   // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/wall-e-bubbles.jpg');
   // background-repeat: no-repeat;
@@ -82,7 +81,7 @@
       background: rgba(247, 244, 244, 0.2);
     }
     & table thead {
-      color: $cadet-blue;
+      color: $greenery;
     }
     & table thead th {
       text-align: center;

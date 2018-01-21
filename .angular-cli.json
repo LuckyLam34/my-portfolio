@@ -22,10 +22,7 @@
       "../node_modules/aos/dist/aos.css",
       "styles/styles.scss"
     ],
-    "scripts": [
-      "../node_modules/aos/dist/aos.js",
-      "../node_modules/velocity-animate/velocity.js"
-    ],
+    "scripts": [],
     "environmentSource": "environments/environment.ts",
     "environments": {
       "dev": "environments/environment.ts",

@@ -3,24 +3,18 @@ import { Observable } from "rxjs/Observable";
 import { HttpClient } from "@angular/common/http";
 import { HttpErrorResponse } from "@angular/common/http/src/response";
 import "rxjs/add/operator/catch";
+import { EndpointService } from "../shared/endpoint.service";
+import { HelperService } from "../shared/helper.service";
 
 
 @Injectable()
 export class AboutMeService {
-  private url = "https://lucky-portfolio.firebaseio.com/aboutMe/";
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private endpoint: EndpointService, private helper: HelperService) {
 
   }
 
   getExperiences(): Observable<any> {
-    return this.http.get<any>(this.url + 'experiences.json')
-      .catch(this.handleError);
-  }
-
-  private handleError(err: HttpErrorResponse) {
-    console.log(err.message);
-
-    return Observable.throw(err.message);
+    return this.helper.sendRequest('get', this.endpoint.experiences);
   }
 }
