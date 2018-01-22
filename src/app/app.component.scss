@@ -1,7 +1,7 @@
 @import '~styles/variables';
 
 /* ====================================
-Navigation 
+Navigation
 ==================================== */
 
 .overlay-navigation {
@@ -172,7 +172,7 @@ Burger king
 ==================================== */
 
 .open-overlay {
-  position: absolute;
+  position: fixed;
   right: 5rem;
   top: 3.2rem;
   z-index: 100;
