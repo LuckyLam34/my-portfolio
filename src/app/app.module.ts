@@ -9,6 +9,7 @@ import { SharedModule } from './shared/shared.module';
 
 import { AboutMeModule } from './about-me/about-me.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ContactModule } from './contact/contact.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     AppRoutingModule,
     SharedModule,
-    AboutMeModule
+    AboutMeModule,
+    ContactModule
   ],
   bootstrap: [AppComponent]
 })
