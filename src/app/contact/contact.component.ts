@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'trinhlam-portfolio-contact',
@@ -7,9 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  contactForm: FormGroup;
+
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
+    this.contactForm = this.fb.group({
+      name: '',
+      message: ['', [Validators.required]],
+      email: ['', [Validators.required, Validators.email]]
+    }, { updateOn: 'submit' });
+  }
+
+  send() {
+    if (this.contactForm.valid) {
+      console.log('sent');
+    } else {
+      Object.keys(this.contactForm.controls).forEach(field => {
+        const control = this.contactForm.get(field);
+        control.markAsTouched({ onlySelf: true });
+      });
+    }
   }
 
 }

@@ -15,3 +15,54 @@ body {
   background-attachment: fixed;
   background-color: #464646;
 }
+
+.content-neon {
+  margin-bottom: $margin-space;
+  h1 {
+    font-size: $h1-header; // overflow: hidden;
+    // animation: type 8s steps(60, end);
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+  color: $text-white;
+  /*
+  &>.text-container {
+    margin: 0 20px;
+    &:before {
+      content: '[';
+      left: 0;
+    }
+    &:after {
+      content: ']';
+      position: absolute;
+      right: 0;
+    }
+    &:after,
+    &:before {
+      position: absolute;
+      top: 0;
+      color: $rain;
+      font-size: 62px;
+      line-height: 102px;
+      -webkit-animation-name: opacity;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-name: opacity;
+      animation-duration: 2s;
+      animation-iteration-count: infinite; 
+      // overflow: hidden;
+      // animation: type 8s steps(60, end);
+    }
+  }
+  */
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}

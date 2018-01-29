@@ -1,8 +1,25 @@
 @import '~styles/variables';
 @import '~styles/mixins';
 .contact {
+  margin-top: 50px;
+  font-size: $regular-text-size;
+  color: $text-white;
   h1 {
-    font-size: $h1-header;
     margin-top: $margin-space;
+  }
+  section.contact-form {
+    input,
+    textarea {
+      background-color: transparent;
+      color: $text-white;
+      font-size: $regular-text-size;
+    }
+    label,
+    button {
+      font-size: $label-size;
+    }
+    label {
+      padding-top: 2px;
+    }
   }
 }
