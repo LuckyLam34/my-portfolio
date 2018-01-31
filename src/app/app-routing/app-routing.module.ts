@@ -4,6 +4,7 @@ import { RouterModule } from "@angular/router";
 import { WelcomeComponent } from '../welcome/welcome.component';
 import { AboutMeComponent } from '../about-me/about-me.component';
 import { ContactComponent } from '../contact/contact.component';
+import { SkillsComponent } from '../skills/skills.component';
 
 @NgModule({
   imports: [
@@ -20,6 +21,10 @@ import { ContactComponent } from '../contact/contact.component';
       {
         path: 'contact',
         component: ContactComponent
+      },
+      {
+        path: 'skills',
+        component: SkillsComponent
       },
       {
         path: '',

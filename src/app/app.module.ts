@@ -11,12 +11,14 @@ import { SharedModule } from './shared/shared.module';
 import { AboutMeModule } from './about-me/about-me.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactModule } from './contact/contact.module';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
