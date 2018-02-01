@@ -9,6 +9,7 @@ import { LevelWidgetComponent } from './level-widget/level-widget.component';
     CommonModule
   ],
   declarations: [LevelWidgetComponent],
+  exports: [LevelWidgetComponent],
   providers: [HelperService, EndpointService]
 })
 export class SharedModule { }
