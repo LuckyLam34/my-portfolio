@@ -2,11 +2,11 @@
   "aboutMe": {
     "careerObjective": "With almost two years of experience working as a Front-end developer I have in-depth knowledge of JavaScript language and hands-on experience with AngularJS. As well as being a good researcher, a person who is open to challenges and having a can-do attitude I think that nothing is impossible as long as enough effort is put. I want to grow more in the field and contribute my best to the world to make it a better place.",
     "experiences": {
-      "mOffice": {
-        "projectDescription": "An hybrid iOS app helping financial advisers to manage their plans that they have submitted to Zurich, but have not yet reached issue.",
-        "projectName": "M-Office",
-        "responsibilities": "Front-end Developer; Developing web admin using AngularJS, CSS3, Bootstrap3, HTML5,Less; Writing Unit Tests using Karma and Jasmine",
-        "teamsize": 5
+      "apbSales": {
+        "projectDescription": "A web application which helps candidates finding and applying their applications to private colleges and universities throughout France.",
+        "projectName": "APB SALES",
+        "responsibilities": "Front-end Developer ; Developing UI and functionalities using AngularJS, CSS3, HTML5, Sass. ; Analyzing requirement from business user",
+        "teamsize": 3
       },
       "docLib": {
         "projectDescription": "A hybrid iOS app helping users search/refer or download content such as PDF document files from Salesforce. Normal users can refer content from the app offline mode after they download content into the app. Users of Content Owner Group can upload/delete content.",
@@ -14,17 +14,23 @@
         "responsibilities": "Front-end Developer; Developing web admin using AngularJS, CSS3, Bootstrap3, HTML5,Less; Writing Unit Tests using Karma and Jasmine",
         "teamsize": 5
       },
-      "apbSales": {
-        "projectDescription": "A web application which helps candidates finding and applying their applications to private colleges and universities throughout France.",
-        "projectName": "APB SALES",
-        "responsibilities": "Front-end Developer ; Developing UI and functionalities using AngularJS, CSS3, HTML5, Sass. ; Analyzing requirement from business user",
-        "teamsize": 3
+      "ePOS1": {
+        "projectDescription": "A hybrid iOS application built only for IPad devices. In phase 1 – Meet & Refine, the app helps agents of banks to collect clients’ info, introduce their company profile and suggest products to clients that meet their needs and goals in life.",
+        "projectName": "ePOS (phase 1 - M&R)",
+        "responsibilities": "Front-end Developer; Developing UI and functionalities using AngularJS, CSS3, HTML5, Sass;Writing unit tests using Karma and Jasmine; Communicating directly with clients to clarify their expectations",
+        "teamsize": 2
       },
-      "onboardMe": {
-        "projectDescription": "OnBoard Me project includes a website for admin, an iOS and an Android app. OnBoard Me admin website helps the HR staff manage new employees in their probation period. They can have an overlook at how many have been newly onboarded, how many have completed tasks during probation. They can also assign tasks for a specific type of employee, deactivate/activate them as well. The iOS and Android apps help employees to complete their given tasks.",
-        "projectName": "OnBoard Me",
-        "responsibilities": "Front-end Developer; Analyzing requirement from business user.; Communicating with clients to clarify their expectations; Developing web admin using AngularJS, CSS3, Bootstrap3, HTML5, Less.; Writing unit tests using Karma and Jasmine.",
-        "teamsize": 6
+      "ePOS2": {
+        "projectDescription": "In phase 2 – Propose.",
+        "projectName": "ePOS (phase 2 - Propose)",
+        "responsibilities": "Front-end Developer;Developing UI and functionalities using Angular 5, Angular Material, CSS3, HTML5, Sass; Writing unit tests using Karma and Jasmine; Communicating directly with clients to clarify their expectations; Migrating AngularJS to Angular 5; Implementing autocomplete fields like provinces, districts and wards",
+        "teamsize": 5
+      },
+      "iHelper": {
+        "projectDescription": "A hybrid Android app helping employers/employees to upload/take jobs in their area.",
+        "projectName": "iHelper",
+        "responsibilities": "Front-end/Back-end Developer; Analyzing requirement from business user.; Communicating with clients to clarify their expectations;  Developing the app using Ionic Framework 1, Cordova, AngularJS, CSS3, HTML5, Sass.; Developing backend services using Loopback and MongoDB; Researching and implementing Google Maps APIs (detect user’s current location, search location)",
+        "teamsize": 4
       },
       "kooNight": {
         "projectDescription": "A web application which helps users finding cool places (like bars, clubs and pubs...) and events to go to and have fun at nights. Users are able to find places that have the best deals in a specific area.",
@@ -32,11 +38,17 @@
         "responsibilities": "Front-end/Back-end Developer; Analyzing requirement from business user; Communicating with clients to clarify their expectations; Developing the web app using AngularJS, CSS3, HTML5, Sass.; Bug-fixing backend services using NodeJS and MongoDB; Researching and implementing Progressive Web App - push notification",
         "teamsize": 3
       },
-      "iHelper": {
-        "projectDescription": "A hybrid Android app helping employers/employees to upload/take jobs in their area.",
-        "projectName": "iHelper",
-        "responsibilities": "Front-end/Back-end Developer; Analyzing requirement from business user.; Communicating with clients to clarify their expectations;  Developing the app using Ionic Framework 1, Cordova, AngularJS, CSS3, HTML5, Sass.; Developing backend services using Loopback and MongoDB; Researching and implementing Google Maps APIs (detect user’s current location, search location)",
-        "teamsize": 4
+      "mOffice": {
+        "projectDescription": "An hybrid iOS app helping financial advisers to manage their plans that they have submitted to Zurich, but have not yet reached issue.",
+        "projectName": "M-Office",
+        "responsibilities": "Front-end Developer; Developing web admin using AngularJS, CSS3, Bootstrap3, HTML5,Less; Writing Unit Tests using Karma and Jasmine",
+        "teamsize": 5
+      },
+      "onboardMe": {
+        "projectDescription": "OnBoard Me project includes a website for admin, an iOS and an Android app. OnBoard Me admin website helps the HR staff manage new employees in their probation period. They can have an overlook at how many have been newly onboarded, how many have completed tasks during probation. They can also assign tasks for a specific type of employee, deactivate/activate them as well. The iOS and Android apps help employees to complete their given tasks.",
+        "projectName": "OnBoard Me",
+        "responsibilities": "Front-end Developer; Analyzing requirement from business user.; Communicating with clients to clarify their expectations; Developing web admin using AngularJS, CSS3, Bootstrap3, HTML5, Less.; Writing unit tests using Karma and Jasmine.",
+        "teamsize": 6
       },
       "projectMOffice": {
         "projectDescription": "An hybrid iOS app helping financial advisers to manage their plans that they have submitted to Zurich, but have not yet reached issue.",
@@ -49,80 +61,83 @@
         "projectName": "UTC-Tracker",
         "responsibilities": "Front-end Developer; Developing UI using AngularJS, CSS3, HTML5, Sass ",
         "teamsize": 5
-      },
-      "ePOS1": {
-        "projectDescription": "A hybrid iOS application built only for IPad devices. In phase 1 – Meet & Refine, the app helps agents of banks to collect clients’ info, introduce their company profile and suggest products to clients that meet their needs and goals in life.",
-        "projectName": "ePOS (phase 1 - M&R)",
-        "responsibilities": "Front-end Developer; Developing UI and functionalities using AngularJS, CSS3, HTML5, Sass;Writing unit tests using Karma and Jasmine; Communicating directly with clients to clarify their expectations",
-        "teamsize": 2
-      },
-      "ePOS2": {
-        "projectName": "ePOS (phase 2 - Propose)",
-        "projectDescription": "In phase 2 – Propose.",
-        "responsibilities": "Front-end Developer;Developing UI and functionalities using Angular 5, Angular Material, CSS3, HTML5, Sass; Writing unit tests using Karma and Jasmine; Communicating directly with clients to clarify their expectations",
-        "teamsize": 5
       }
     },
     "skills": {
       "skill1": {
         "name": "AngularJS",
-        "proficiency": 5
-      },
-      "skill2": {
-        "name": "CSS3",
-        "proficiency": 5
-      },
-      "skill3": {
-        "name": "Ionic Framework 1",
-        "proficiency": 5
-      },
-      "skill4": {
-        "name": "Less",
-        "proficiency": "4"
-      },
-      "skill5": {
-        "name": "Sass",
-        "proficiency": 5
-      },
-      "skill6": {
-        "name": "Karma-Jasmine",
-        "proficiency": 5
-      },
-      "skill7": {
-        "name": "Angular5",
-        "proficiency": 3
-      },
-      "skill8": {
-        "name": "ReactJS",
-        "proficiency": 1
-      },
-      "skill9": {
-        "name": "RESTful",
-        "proficiency": 3
+        "proficiency": 5,
+        "imgUrl": "../../../assets/angularJS.svg"
       },
       "skill10": {
         "name": "HTML5",
-        "proficiency": 5
+        "proficiency": 5,
+        "imgUrl": "../../../assets/angular2.png"
       },
       "skill11": {
         "name": "Git",
-        "proficiency": 5
+        "proficiency": 5,
+        "imgUrl": "../../../assets/angular2.png"
       },
       "skill12": {
         "name": "Jira",
-        "proficiency": 5
+        "proficiency": 5,
+        "imgUrl": "../../../assets/angular2.png"
       },
       "skill13": {
         "name": "JQuery",
-        "proficiency": 3
+        "proficiency": 3,
+        "imgUrl": "../../../assets/angular2.png"
       },
       "skill14": {
         "name": "NodeJS",
-        "proficiency": 2
+        "proficiency": 2,
+        "imgUrl": "../../../assets/angular2.png"
       },
-      "skill15": {
-        "name": "HTML5",
-        "proficiency": 5
+      "skill2": {
+        "name": "CSS3",
+        "proficiency": 5,
+        "imgUrl": "../../../assets/angular2.png"
+      },
+      "skill3": {
+        "name": "Ionic Framework 1",
+        "proficiency": 5,
+        "imgUrl": "../../../assets/angular2.png"
+      },
+      "skill4": {
+        "name": "Less",
+        "proficiency": 4,
+        "imgUrl": "../../../assets/angular2.png"
+      },
+      "skill5": {
+        "name": "Sass",
+        "proficiency": 5,
+        "imgUrl": "../../../assets/angular2.png"
+      },
+      "skill6": {
+        "name": "Karma-Jasmine",
+        "proficiency": 5,
+        "imgUrl": "../../../assets/angular2.png"
+      },
+      "skill7": {
+        "name": "Angular5",
+        "proficiency": 3,
+        "imgUrl": "../../../assets/angular2.png"
+      },
+      "skill8": {
+        "name": "ReactJS",
+        "proficiency": 1,
+        "imgUrl": "../../../assets/angular2.png"
+      },
+      "skill9": {
+        "name": "RESTful",
+        "proficiency": 3,
+        "imgUrl": "../../../assets/angular2.png"
+      },
+      "skill17": {
+        "name": "TypeScript",
+        "proficiency": 3,
+        "imgUrl": "../../../assets/angular2.png"
       }
     }
   }

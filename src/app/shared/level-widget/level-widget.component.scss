@@ -4,13 +4,8 @@
     background-color: rgba(188, 226, 126, 0.2);
     border-color: $rain;
     position: relative;
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      max-width: 80px;
-      max-height: 80px;
-    }
+    background-size: contain;
+    background-repeat: no-repeat;
     .panel-title {
       font-size: $label-size;
       color: $text-white;
