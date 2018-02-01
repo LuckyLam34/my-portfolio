@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'trinhlam-portfolio-level-widget',
@@ -7,9 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LevelWidgetComponent implements OnInit {
 
+  @Input()
+  imgUrl: string;
+
+  @Input()
+  level: number;
+
+  id: string;
+
   constructor() { }
 
   ngOnInit() {
+
+    this.id = Math.floor(Math.random() * 1000) + '';
+
+    $(document).ready(() => {
+      const stars = $('#' + this.id);
+
+      for (let i = 0; i < +this.level; i++) {
+        $($(stars[0]).children()[i]).addClass('yellow-star');
+      }
+    })
   }
 
 }

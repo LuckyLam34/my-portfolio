@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
-import * as velocity from 'velocity-animate';
 
 // window['jQuery'] = window['$'] = $;
 (<any>window).jQuery = (<any>window).$ = $;
