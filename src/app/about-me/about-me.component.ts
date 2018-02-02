@@ -44,6 +44,14 @@ export class AboutMeComponent implements OnInit {
     });
   }
 
+  go(id) {
+    $(document).ready(() => {
+      $('html, body').animate({
+        scrollTop: $('#' + id).offset().top
+      }, 1000);
+    });
+  }
+
   private convertStringToArray(fromString: string): string[] {
     let toArray: string[] = [];
 

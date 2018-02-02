@@ -1,13 +1,46 @@
 @import '~styles/variables';
 @import '~styles/mixins';
 .about-me {
-  // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/wall-e-bubbles.jpg');
-  // background-repeat: no-repeat;
-  // background-color: #464646;
-  // background-position: center;
-  // background-size: cover;
-  // background-attachment: fixed;
-  // height: 100%;
+  nav {
+    position: fixed;
+    i,
+    img {
+      cursor: pointer;
+    }
+    img {
+      width: 30px;
+      height: 30px;
+    }
+    color: $icon-white;
+    ul {
+      position: relative;
+    }
+    ul>li {
+      font-size: $icon-size-small;
+      display: block;
+      list-style: none;
+      padding-top: 50px;
+    }
+    .border {
+      border-left: 2px solid $white;
+      height: 88px;
+      position: absolute;
+    }
+    ul {
+      li:nth-child(2).border {
+        top: 73px;
+        left: 50px;
+      }
+      li:nth-child(4).border {
+        top: 160px;
+        left: 50px;
+      }
+      li:nth-child(6).border {
+        top: 267px;
+        left: 50px;
+      }
+    }
+  }
   &>h1 {
     @include center;
     color: $text-white

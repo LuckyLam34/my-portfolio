@@ -1,7 +1,24 @@
 <div class="about-me">
+  <nav>
+    <ul>
+      <li>
+        <i (click)="go('basic')" class="fa fa-user"></i>
+      </li>
+      <li class="border"></li>
+      <li>
+        <i (click)="go('wherefrom')" class="fa fa-location-arrow"></i>
+      </li>
+      <li class="border"></li>
+      <li>
+        <i (click)="go('career')" class="fa fa-circle"></i>
+      </li>
+      <li class="border"></li>
+      <li><i (click)="go('education')" class="fa fa-graduation-cap"></i></li>
+    </ul>
+  </nav>
 
   <div class="container">
-    <section class="row item basic" data-aos="fade-up">
+    <section id="basic" class="row item basic" data-aos="fade-up">
       <div class="col-md-3">
         <img class="img-circle img-responsive" src="../../assets/trinhlam.png" alt="Trinh Lam pic">
       </div>
@@ -39,7 +56,7 @@
         </div>
       </div>
     </section>
-    <section class="item education" data-aos="fade-right">
+    <section id="education" class="item education" data-aos="fade-right">
       <div class="row">
 
         <div data-aos="flip-up" class="col-md-12">
