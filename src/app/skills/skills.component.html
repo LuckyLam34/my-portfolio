@@ -1,22 +1,13 @@
 <div class="skills">
+  <header class="content-neon">
+    <h1 data-aos="fade-right" class="text-center">
+      My Skills
+    </h1>
+  </header>
   <div class="container">
-    <header class="content-neon">
-      <h1 class="text-center">
-        My Skills
-      </h1>
-    </header>
     <section class="showed-skills">
-      <div class="col-md-3 col-xs-6">
-        <trinhlam-portfolio-level-widget widget-name="angular2" imgUrl="../../../assets/angular2.png" level="3"></trinhlam-portfolio-level-widget>
-      </div>
-      <div class="col-md-3 col-xs-6">
-        <trinhlam-portfolio-level-widget imgUrl="../../../assets/angular2.png" level="4"></trinhlam-portfolio-level-widget>
-      </div>
-      <div class="col-md-3 col-xs-6">
-        <trinhlam-portfolio-level-widget imgUrl="../../../assets/angular2.png" level="5"></trinhlam-portfolio-level-widget>
-      </div>
-      <div class="col-md-3 col-xs-6">
-        <trinhlam-portfolio-level-widget imgUrl="../../../assets/angular2.png" level="4"></trinhlam-portfolio-level-widget>
+      <div data-aos="zoom-in-up" *ngFor="let skill of skills" class="col-md-3 col-xs-6">
+        <trinhlam-portfolio-level-widget widgetName="{{skill.name}}" imgUrl="{{skill.imgUrl}}" level="{{skill.proficiency}}"></trinhlam-portfolio-level-widget>
       </div>
     </section>
   </div>

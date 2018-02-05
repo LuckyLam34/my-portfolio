@@ -1,0 +1,37 @@
+<div class="experience">
+  <div class="container">
+    <header class="content-neon">
+      <h1 data-aos="fade-right" class="text-center">
+        My Experience
+      </h1>
+    </header>
+    <section class="item experience">
+      <div class="row">
+        <div data-aos="zoom-in" id="no-tables">
+          <table class="col-md-12 table-bordered table-condensed cf">
+            <thead class="cf">
+              <tr>
+                <th>Project Name</th>
+                <th>Project Description</th>
+                <th>Team Size</th>
+                <th>Responsibilities</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let project of experiences">
+                <td data-title="Project">{{project.projectName}}</td>
+                <td data-title="Description">{{project.projectDescription}}</td>
+                <td data-title="Size" class="numeric">{{project.teamsize}}</td>
+                <td data-title="Role">
+                  <ul>
+                    <li *ngFor="let r of project.responsibilities">{{r}}</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

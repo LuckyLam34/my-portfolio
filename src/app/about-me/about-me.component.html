@@ -1,34 +1,37 @@
 <div class="about-me">
   <nav>
-    <ul>
+    <ul class="icon-neon">
       <li>
-        <i (click)="go('basic')" class="fa fa-user"></i>
+        <i (click)="go('basic')" class="fa fa-user"></i> <i>Me</i>
       </li>
       <li class="border"></li>
       <li>
-        <i (click)="go('wherefrom')" class="fa fa-location-arrow"></i>
+        <i (click)="go('wherefrom')" class="fa fa-location-arrow"></i> <i>Location</i>
       </li>
       <li class="border"></li>
       <li>
-        <i (click)="go('career')" class="fa fa-circle"></i>
+        <i (click)="go('career')" class="fa fa-circle"></i> <i>Goal</i>
       </li>
       <li class="border"></li>
-      <li><i (click)="go('education')" class="fa fa-graduation-cap"></i></li>
+      <li><i (click)="go('education')" class="fa fa-graduation-cap"></i><i>Education</i></li>
     </ul>
   </nav>
 
   <div class="container">
-    <section id="basic" class="row item basic" data-aos="fade-up">
+    <header class="content-neon">
+      <h1 data-aos="fade-right" class="text-center">
+        Who I Am?
+      </h1>
+    </header>
+    <section id="basic" class="row item basic no-padding-top" data-aos="fade-up">
       <div class="col-md-3">
         <img class="img-circle img-responsive" src="../../assets/trinhlam.png" alt="Trinh Lam pic">
       </div>
       <div data-aos="zoom-in-up" class="col-md-6">
-
-        <p>Hi! I'm Wall-e</p>
-        <p>Nah, just kidding! My name is Trinh
+        <p>Hi! My name is Trinh
         </p>
 
-        <p>I'm a front-end developer
+        <p>I'm a Front-End developer
         </p>
       </div>
     </section>
@@ -66,39 +69,6 @@
           <p>Bachelor of Science (B.S.), Information Technology</p>
           <p>Saigon University</p>
           <p>2016</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="experiences" class="item experiences">
-      <div class="row">
-        <div data-aos="flip-up" class="col-md-12">
-          <img src="../../assets/working.png" alt="" class="img-responsive">
-        </div>
-        <div class="clearfix"></div>
-        <div data-aos="zoom-in" id="no-tables">
-          <table class="col-md-12 table-bordered table-condensed cf">
-            <thead class="cf">
-              <tr>
-                <th>Project Name</th>
-                <th>Project Description</th>
-                <th>Team Size</th>
-                <th>Responsibilities</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let project of experiences">
-                <td data-title="Project">{{project.projectName}}</td>
-                <td data-title="Description">{{project.projectDescription}}</td>
-                <td data-title="Size" class="numeric">{{project.teamsize}}</td>
-                <td data-title="Role">
-                  <ul>
-                    <li *ngFor="let r of project.responsibilities">{{r}}</li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </section>

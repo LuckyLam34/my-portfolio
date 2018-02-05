@@ -2,10 +2,16 @@
 @import '~styles/mixins';
 .about-me {
   nav {
+    top: 25%;
     position: fixed;
-    i,
-    img {
+    i {
       cursor: pointer;
+      transition: transform .2s;
+    }
+    i:hover {
+      -ms-transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
     }
     img {
       width: 30px;
@@ -14,6 +20,9 @@
     color: $icon-white;
     ul {
       position: relative;
+      span {
+        font-size: $regular-text-size;
+      }
     }
     ul>li {
       font-size: $icon-size-small;
@@ -28,16 +37,19 @@
     }
     ul {
       li:nth-child(2).border {
-        top: 73px;
+        top: 84px;
         left: 50px;
       }
       li:nth-child(4).border {
         top: 160px;
-        left: 50px;
+        left: 51px;
       }
       li:nth-child(6).border {
         top: 267px;
-        left: 50px;
+        left: 51px;
+      }
+      &>li>i:last-child {
+        font-size: $small-text-size;
       }
     }
   }
@@ -54,6 +66,9 @@
     padding: 50px;
     color: $text-white;
     font-size: 2.5em;
+  }
+  .no-padding-top {
+    padding-top: 0 !important;
   }
   [data-aos='anim3'] {
     transform: rotate(360deg);
@@ -98,46 +113,6 @@
     }
     p {
       text-align: center;
-    }
-  }
-  section.experiences {
-    img {
-      max-height: 200px;
-      max-width: 200px;
-      margin: 0 auto;
-    }
-    #no-tables {
-      margin-top: $margin-space;
-    }
-    & table {
-      background: $blur-background;
-    }
-    & table thead {
-      color: $greenery;
-    }
-    & table thead th {
-      text-align: center;
-    }
-    & table thead,
-    tr,
-    td {
-      font-size: 0.8em;
-    }
-    & tbody>tr>td:nth-child(3) {
-      text-align: center;
-    }
-    tr>th:nth-child(2) {
-      width: 300px;
-    }
-    ul {
-      padding: 0;
-    }
-    ul>li:first-child {
-      padding-left: 0px;
-    }
-    ul>li {
-      list-style-type: none;
-      padding-left: 15px;
     }
   }
   /*

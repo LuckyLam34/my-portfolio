@@ -12,6 +12,9 @@ export class LevelWidgetComponent implements OnInit {
   imgUrl: string;
 
   @Input()
+  widgetName: string;
+
+  @Input()
   level: number;
 
   id: string;
@@ -19,8 +22,7 @@ export class LevelWidgetComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
-    this.id = Math.floor(Math.random() * 1000) + '';
+    this.id = Math.floor(Math.random() * 10000) + '';
 
     $(document).ready(() => {
       const stars = $('#' + this.id);

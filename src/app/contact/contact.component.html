@@ -1,10 +1,10 @@
 <div class="contact">
   <div class="container">
     <header class="content-neon">
-      <h1 class="text-center">Contact me</h1>
+      <h1 data-aos="fade-right" class="text-center">Contact me</h1>
     </header>
     <section class="contact-form">
-      <form (ngSubmit)="send()" [formGroup]="contactForm" novalidate class="form-horizontal">
+      <form data-aos="zoom-in-up" (ngSubmit)="send()" [formGroup]="contactForm" novalidate class="form-horizontal">
         <div class="form-group">
           <label for="name" class="col-sm-2 col-xs-12 control-label">Name</label>
           <div class="col-sm-10 col-xs-12">
@@ -29,7 +29,7 @@
         <br>
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-greenery"> 
+            <button [disabled]="true" type="submit" class="btn btn-greenery"> 
              <span class="glyphicon glyphicon-send"></span> Send</button>
           </div>
         </div>

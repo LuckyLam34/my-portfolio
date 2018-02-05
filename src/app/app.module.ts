@@ -12,13 +12,16 @@ import { AboutMeModule } from './about-me/about-me.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactModule } from './contact/contact.module';
 import { SkillsComponent } from './skills/skills.component';
+import { ServiceModule } from './services/service.module';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     WelcomeComponent,
-    SkillsComponent
+    SkillsComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,8 @@ import { SkillsComponent } from './skills/skills.component';
     AppRoutingModule,
     SharedModule,
     AboutMeModule,
-    ContactModule
+    ContactModule,
+    ServiceModule
   ],
   bootstrap: [AppComponent]
 })

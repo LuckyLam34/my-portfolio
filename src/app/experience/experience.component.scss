@@ -1,0 +1,46 @@
+@import '~styles/variables';
+@import '~styles/mixins';
+.experience {
+  .item {
+    margin-bottom: $margin-space;
+    color: $text-white;
+    font-size: 2.5em;
+  }
+  section.experience {
+    img {
+      max-height: 200px;
+      max-width: 200px;
+      margin: 0 auto;
+    }
+    & table {
+      background: $blur-background;
+    }
+    & table thead {
+      color: $greenery;
+    }
+    & table thead th {
+      text-align: center;
+    }
+    & table thead,
+    tr,
+    td {
+      font-size: 0.8em;
+    }
+    & tbody>tr>td:nth-child(3) {
+      text-align: center;
+    }
+    tr>th:nth-child(2) {
+      width: 300px;
+    }
+    ul {
+      padding: 0;
+    }
+    ul>li:first-child {
+      padding-left: 0px;
+    }
+    ul>li {
+      list-style-type: none;
+      padding-left: 15px;
+    }
+  }
+}

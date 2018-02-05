@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as AOS from '../../../node_modules/aos/dist/aos';
+import * as AOS from 'aos';
 import { AboutMeService } from '../services/about-me.service';
 import * as _ from 'lodash';
 import * as $ from 'jquery';
@@ -20,20 +20,20 @@ export class AboutMeComponent implements OnInit {
       duration: 1200
     });
 
-    setInterval(() => {
-      AOS.init({
-        duration: 1200
-      });
-    }, 2000);
+    // setInterval(() => {
+    //   AOS.init({
+    //     duration: 1200
+    //   });
+    // }, 2000);
 
-    this.aboutMeService.getExperiences()
-      .subscribe(data => {
-        for (let key in data) {
-          this.experiences.push(data[key]);
-          data[key]['responsibilities'] = this.convertStringToArray(data[key]['responsibilities']);
-        }
-      },
-      error => console.error('Error!!!'));
+    // this.aboutMeService.getExperiences()
+    //   .subscribe(data => {
+    //     for (let key in data) {
+    //       this.experiences.push(data[key]);
+    //       data[key]['responsibilities'] = this.convertStringToArray(data[key]['responsibilities']);
+    //     }
+    //   },
+    //   error => console.error('Error!!!'));
   }
 
   goNext() {
@@ -52,9 +52,9 @@ export class AboutMeComponent implements OnInit {
     });
   }
 
-  private convertStringToArray(fromString: string): string[] {
-    let toArray: string[] = [];
+  // private convertStringToArray(fromString: string): string[] {
+  //   let toArray: string[] = [];
 
-    return _.split(fromString, ';');
-  }
+  //   return _.split(fromString, ';');
+  // }
 }

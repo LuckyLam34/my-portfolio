@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'trinhlam-portfolio-contact',
@@ -18,6 +19,10 @@ export class ContactComponent implements OnInit {
       message: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]]
     }, { updateOn: 'submit' });
+
+    AOS.init({
+      duration: 1200
+    });
   }
 
   send() {

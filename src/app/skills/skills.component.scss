@@ -6,5 +6,9 @@
   }
   section.showed-skills {
     margin-top: $margin-space;
+    &>.col-md-3:last-child,
+    .col-xs-6:last-child {
+      margin-bottom: 10px;
+    }
   }
 }

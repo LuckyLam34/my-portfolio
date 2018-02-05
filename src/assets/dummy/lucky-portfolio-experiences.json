@@ -67,77 +67,77 @@
       "skill1": {
         "name": "AngularJS",
         "proficiency": 5,
-        "imgUrl": "../../../assets/angularJS.svg"
+        "imgUrl": "../../../assets/skills/angularJS.svg"
       },
       "skill10": {
         "name": "HTML5",
         "proficiency": 5,
-        "imgUrl": "../../../assets/angular2.png"
+        "imgUrl": "../../../assets/skills/html5.png"
       },
       "skill11": {
         "name": "Git",
         "proficiency": 5,
-        "imgUrl": "../../../assets/angular2.png"
+        "imgUrl": "../../../assets/skills/git.png"
       },
       "skill12": {
         "name": "Jira",
         "proficiency": 5,
-        "imgUrl": "../../../assets/angular2.png"
+        "imgUrl": "../../../assets/skills/jira.png"
       },
       "skill13": {
         "name": "JQuery",
         "proficiency": 3,
-        "imgUrl": "../../../assets/angular2.png"
+        "imgUrl": "../../../assets/skills/jquery.gif"
       },
       "skill14": {
         "name": "NodeJS",
         "proficiency": 2,
-        "imgUrl": "../../../assets/angular2.png"
+        "imgUrl": "../../../assets/skills/nodejs.svg"
       },
       "skill2": {
         "name": "CSS3",
         "proficiency": 5,
-        "imgUrl": "../../../assets/angular2.png"
+        "imgUrl": "../../../assets/skills/css3.png"
       },
       "skill3": {
         "name": "Ionic Framework 1",
         "proficiency": 5,
-        "imgUrl": "../../../assets/angular2.png"
+        "imgUrl": "../../../assets/skills/ionic1.png"
       },
       "skill4": {
         "name": "Less",
         "proficiency": 4,
-        "imgUrl": "../../../assets/angular2.png"
+        "imgUrl": "../../../assets/skills/less.png"
       },
       "skill5": {
         "name": "Sass",
         "proficiency": 5,
-        "imgUrl": "../../../assets/angular2.png"
+        "imgUrl": "../../../assets/skills/sass.png"
       },
       "skill6": {
         "name": "Karma-Jasmine",
         "proficiency": 5,
-        "imgUrl": "../../../assets/angular2.png"
+        "imgUrl": "../../../assets/skills/jasmine.png"
       },
       "skill7": {
         "name": "Angular5",
         "proficiency": 3,
-        "imgUrl": "../../../assets/angular2.png"
+        "imgUrl": "../../../assets/skills/angular2.png"
       },
       "skill8": {
         "name": "ReactJS",
         "proficiency": 1,
-        "imgUrl": "../../../assets/angular2.png"
+        "imgUrl": "../../../assets/skills/reactjs.png"
       },
       "skill9": {
         "name": "RESTful",
         "proficiency": 3,
-        "imgUrl": "../../../assets/angular2.png"
+        "imgUrl": "../../../assets/skills/restful.png"
       },
       "skill17": {
         "name": "TypeScript",
         "proficiency": 3,
-        "imgUrl": "../../../assets/angular2.png"
+        "imgUrl": "../../../assets/skills/typescript.png"
       }
     }
   }
