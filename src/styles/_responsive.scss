@@ -86,3 +86,20 @@
     font-size: 10px !important;
   }
 }
+
+@media screen and (max-width: 504px) {
+  .content-neon {
+    h1 {
+      animation: none !important;
+      -webkit-animation: none !important;
+      -moz-animation: none !important;
+    }
+  }
+  .icon-neon {
+    i {
+      animation: none !important;
+      -webkit-animation: none !important;
+      -moz-animation: none !important;
+    }
+  }
+}
