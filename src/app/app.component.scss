@@ -122,5 +122,8 @@ nav {
 .open {
   .l6 {
     background: $greenery;
+    i.fa-bars {
+      display: none;
+    }
   }
 }

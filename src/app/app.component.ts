@@ -18,7 +18,8 @@ export class AppComponent {
     this.initMenu();
     $(document).ready(() => {
       FastClick.attach(document.body);
-    })
+    });
+
   }
 
   initMenu() {

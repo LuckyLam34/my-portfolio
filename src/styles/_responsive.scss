@@ -79,15 +79,6 @@
       }
     }
   }
-}
-
-@media screen and (max-width: 720px) {
-  html {
-    font-size: 10px !important;
-  }
-}
-
-@media screen and (max-width: 504px) {
   .content-neon {
     h1 {
       animation: none !important;
@@ -103,3 +94,11 @@
     }
   }
 }
+
+@media screen and (max-width: 720px) {
+  html {
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {}

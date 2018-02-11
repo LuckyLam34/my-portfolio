@@ -108,11 +108,16 @@
     }
   }
   section.education {
-    img {
-      margin: 0 auto;
+    i {
+      @include center;
+      font-size: 160px;
+      color: $icon-green;
     }
     p {
       text-align: center;
+    }
+    &>.row>div:last-child {
+      margin-top: 75px;
     }
   }
   /*
