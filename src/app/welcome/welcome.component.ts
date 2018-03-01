@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-// import * as $ from 'jquery';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'trinhlam-portfolio-welcome',
@@ -12,7 +12,9 @@ export class WelcomeComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-
+    AOS.init({
+      duration: 1200
+    });
   }
 
   goAboutMe() {
