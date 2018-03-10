@@ -6,6 +6,9 @@
   h1 {
     margin-top: $margin-space;
   }
+  .header {
+    margin-bottom: $margin-space;
+  }
   section.contact-form {
     input,
     textarea {
@@ -21,4 +24,5 @@
       padding-top: 2px;
     }
   }
+  .detail {}
 }
