@@ -103,9 +103,13 @@
 
 @media screen and (max-width: 504px) {
   nav {
+    &.top-right {
+      top: -256px !important;
+      right: -253px !important;
+    }
     i.fa-bars {
-      right: 22px !important;
-      top: 18px !important;
+      right: 37px !important;
+      top: 35px !important;
     }
   }
 }
