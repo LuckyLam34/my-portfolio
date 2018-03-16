@@ -101,4 +101,11 @@
   }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 504px) {
+  nav {
+    i.fa-bars {
+      right: 22px !important;
+      top: 18px !important;
+    }
+  }
+}
