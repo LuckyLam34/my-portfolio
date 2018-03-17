@@ -79,7 +79,7 @@
       opacity: 1;
     }
   }
-  section.basic {
+  section#basic {
     margin-top: 0;
     .img-circle,
     img {
@@ -87,7 +87,9 @@
       margin-top: $margin-space;
     }
     .img-circle {
-      width: 310px;
+      width: 200px;
+      height: 200px;
+      background: url('../../assets/trinhlam-new.png') no-repeat center;
     }
     &>p:first-child {
       white-space: nowrap;

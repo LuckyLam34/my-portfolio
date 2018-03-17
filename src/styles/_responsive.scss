@@ -112,4 +112,31 @@
       top: 35px !important;
     }
   }
+  .about-me {
+    .container {
+      section {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        .item {
+          margin-top: 0 !important;
+        }
+      }
+      section#basic {
+        .col-md-3 {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          height: 200px !important;
+          background: url('../assets/trinhlam-dxc.jpg') no-repeat center;
+        }
+        .img-circle {
+          display: none !important;
+        }
+      }
+      section.career-objective {
+        .text-right {
+          text-align: center !important;
+        }
+      }
+    }
+  }
 }
