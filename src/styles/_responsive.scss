@@ -102,6 +102,9 @@
 }
 
 @media screen and (max-width: 504px) {
+  html {
+    font-size: 9px !important;
+  }
   nav {
     &.top-right {
       top: -256px !important;
@@ -122,20 +125,32 @@
         }
       }
       section#basic {
+        font-size: 30px !important;
+        text-align: center;
         .col-md-3 {
           padding-left: 0 !important;
           padding-right: 0 !important;
-          height: 200px !important;
+          height: 300px !important;
           background: url('../assets/rsz-trinhlam.jpg') no-repeat center;
         }
         .img-circle {
           display: none !important;
         }
       }
+      section#wherefrom {
+        font-size: 30px !important;
+      }
       section.career-objective {
         .text-right {
           text-align: center !important;
+          font-size: 22px !important;
         }
+      }
+      section#scrollNext {
+        pointer-events: none;
+      }
+      section#education {
+        font-size: 23px !important;
       }
     }
   }
