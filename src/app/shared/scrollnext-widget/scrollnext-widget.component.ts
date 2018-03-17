@@ -13,10 +13,12 @@ export class ScrollnextWidgetComponent implements OnInit {
   isShown: boolean = true;
 
   ngOnInit() {
+    if ($(window).height() + 100 > $(document).height()) {
+      this.isShown = false;
+    }
 
     $(window).scroll(() => {
-
-      if ($(window).scrollTop() + $(window).height() > $(document).height() - 200) {
+      if ($(window).scrollTop() + $(window).height() > $(document).height() - 230) {
         this.isShown = false;
       } else {
         this.isShown = true;
