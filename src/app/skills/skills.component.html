@@ -6,9 +6,10 @@
   </header>
   <div class="container">
     <section class="showed-skills">
-      <div data-aos="zoom-in-up" *ngFor="let skill of skills" class="col-md-3 col-xs-6">
+      <div data-aos="zoom-out-right" *ngFor="let skill of skills" class="col-md-3 col-xs-6">
         <trinhlam-portfolio-level-widget widgetName="{{skill.name}}" imgUrl="{{skill.imgUrl}}" level="{{skill.proficiency}}"></trinhlam-portfolio-level-widget>
       </div>
     </section>
   </div>
+  <trinhlam-portfolio-scrollnext-widget></trinhlam-portfolio-scrollnext-widget>
 </div>

@@ -36,14 +36,6 @@ export class AboutMeComponent implements OnInit {
     //   error => console.error('Error!!!'));
   }
 
-  goNext() {
-    $(document).ready(() => {
-      $('html, body').animate({
-        scrollTop: $('#career').offset().top
-      }, 1000);
-    });
-  }
-
   go(id) {
     $(document).ready(() => {
       $('html, body').animate({

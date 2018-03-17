@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
-import * as FastClick from 'fastclick';
 
 // window['jQuery'] = window['$'] = $;
 (<any>window).jQuery = (<any>window).$ = $;
@@ -16,10 +15,6 @@ export class AppComponent {
 
   ngOnInit() {
     this.initMenu();
-    $(document).ready(() => {
-      FastClick.attach(document.body);
-    });
-
   }
 
   initMenu() {
