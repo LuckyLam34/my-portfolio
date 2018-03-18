@@ -53,9 +53,11 @@
       }
     }
   }
+  h1 {
+    color: $text-white;
+  }
   &>h1 {
     @include center;
-    color: $text-white
   }
   .item {
     // width: 800px;
@@ -66,6 +68,9 @@
     padding: 50px;
     color: $text-white;
     font-size: 2.5em;
+  }
+  .item:last-child {
+    padding-right: 0 !important;
   }
   .no-padding-top {
     padding-top: 0 !important;
@@ -120,6 +125,32 @@
     }
     &>.row>div:last-child {
       margin-top: 75px;
+    }
+  }
+  section#book,
+  section#hobbies {
+    h1 {
+      margin-top: 0;
+    }
+  }
+  section#book {
+    .col-md-12 {
+      display: flex;
+    }
+    img {
+      padding-top: 10px;
+    }
+  }
+  section#hobbies {
+    padding-left: 50px;
+  }
+  section#hobbies,
+  section#book {
+    img {
+      max-width: 200px;
+      max-height: 228px;
+      padding-right: 10px;
+      margin: 0 auto;
     }
   }
 }

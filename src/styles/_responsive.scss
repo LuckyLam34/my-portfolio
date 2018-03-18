@@ -155,6 +155,18 @@
       section#education {
         font-size: 23px !important;
       }
+      section#book {
+        h1 {
+          margin-bottom: 20px;
+        }
+      }
+      section#book,
+      section#hobbies {
+        h1 {
+          font-size: 23px !important;
+          text-align: center;
+        }
+      }
     }
   }
 }
