@@ -6,6 +6,7 @@ import { AboutMeComponent } from '../about-me/about-me.component';
 import { ContactComponent } from '../contact/contact.component';
 import { SkillsComponent } from '../skills/skills.component';
 import { ExperienceComponent } from '../experience/experience.component';
+import { LoginComponent } from '../admin/login/login.component';
 
 @NgModule({
   imports: [
@@ -30,6 +31,9 @@ import { ExperienceComponent } from '../experience/experience.component';
       {
         path: 'experience',
         component: ExperienceComponent
+      }, {
+        path: 'login',
+        component: LoginComponent
       },
       {
         path: '',
