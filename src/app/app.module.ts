@@ -14,6 +14,7 @@ import { ContactModule } from './contact/contact.module';
 import { SkillsComponent } from './skills/skills.component';
 import { ServiceModule } from './services/service.module';
 import { ExperienceComponent } from './experience/experience.component';
+import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ExperienceComponent } from './experience/experience.component';
     SharedModule,
     AboutMeModule,
     ContactModule,
-    ServiceModule
+    ServiceModule,
+    AdminModule
   ],
   bootstrap: [AppComponent]
 })

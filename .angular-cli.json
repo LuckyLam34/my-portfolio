@@ -24,8 +24,7 @@
       "styles/styles.scss"
     ],
     "scripts": [
-      "../node_modules/jquery/dist/jquery.min.js",
-      "../node_modules/jquery-sticky/jquery.sticky.js"
+      "assets/js/google-api-oauth.js"
     ],
     "environmentSource": "environments/environment.ts",
     "environments": {
